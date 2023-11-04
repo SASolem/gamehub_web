@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub</title>
+    <link rel="stylesheet" href="./styles.css">
+   
+  </head>
+  <body>
+    <header>
+      <h1 class="logoText">GAMEHUB</h1>
+      <button class="hamburger" id="hamburgerButton">&#9776;</button>
+      <nav class="navContainer">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./pages/products.html">Products</a></li>
+          <li class="cart">
+            <a href="./pages/cart.html" id="cart-icon" onclick="toggleCartPage()">
+              🛒 <span id="cart-count">0</span>
+            </a>
+          </li>          
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="searchContainer">
+      <input type="text" placeholder="Search..." />
+      <button type="button" class="searchButton">Search</button>
+    </div>
+  
+    <div class="modal-container" id="modalContainer">
+        <ul class="searchResults"></ul>
+      </div>
+    </div>
+    
+      <h2>Welcome to world of universal games!</h2>
+
+      <div class="buttonContainer">
+        <p class="check-out">Explore our collections.</p>
+        <a class="checkButton" href="./pages/products.html">Check it out!</a>
+      </div>
+
+    <div id="gameList" class="game-container">
+
+    </div>
+
+    <div class="news-wrapper">
+        <div class="news-container">
+          <h2 class="news-h2">News</h2>
+          <div class="news-paragraph">
+            <p>
+              Watch out! Mysterious agent called Black, with his previous
+              mission involving a terrorist operation. An amazing and thrilling
+              game adventure that suited to your budget. Grab a copy now! Love
+              to be challenge? Pingpong games will sweat you with excitement and
+              full of fun. Have the time travelling experience in outer
+              space.Space war is here! Avail a copy now!
+            </p>
+            <p>
+              Want to sell your games?
+              <a class="newsButton" href="./pages/sell.html">Click here!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button id="scrollToTopBtn">Top</button>
+      </div>
+    </main>
+
+    <footer class="footerContainer">
+      <span class="footerText">&copy; 2023 Gamehub. All rights reserved.</span>
+      <span class="footerText">Design by NeNorvalls</span>
+    </footer>
+  
+    <script type="module" src="./scripts.js"></script>
+    <script type="module" src="./header.js"></script>
+    <script type="module" src="./data/games.js"></script>
+    <script type="module" src="./search.js"></script>
+  </body>
+</html>

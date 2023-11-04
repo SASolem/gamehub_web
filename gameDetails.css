@@ -1,0 +1,71 @@
+#gameDetailsContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+}
+
+.like-button {
+  background-image: url("images/background.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px; 
+}
+
+button,
+.backButton,
+.like-button {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-image: url("images/background.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.backButton {
+  margin: 3rem;
+}
+
+.backButton:hover {
+  background-color: #ffd700;
+}
+
+@media (max-width: 600px) {
+  #gameDetailsContainer {
+    padding: 10px;
+  }
+}

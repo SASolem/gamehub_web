@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header,
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* ================================================= LogoTExt */
+.logoText {
+  margin: 0;
+  float: left;
+  font-family: "Press Start 2P", sans-serif !important;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logoText {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+}
+
+/* ================================================== Hamburger */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .navContainer ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .navContainer ul.show {
+    display: flex;
+  }
+
+  .navContainer ul li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    background: none;
+    border: none;
+  }
+}
+
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+.navContainer {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 1.5rem;
+  padding: 0;
+  display: flex;
+  float: right;
+  margin-top: 1rem;
+}
+
+nav li {
+  margin-right: 20px;
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center !important;
+  margin: 20px 0 !important;
+}
+
+/* ====================== Cart Navlinks Styles` */
+.cartLink {
+  position: relative;
+  right: 0;
+}
+
+.cart-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.cart-count {
+  position: fixed;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: -7px;
+}
+
+/* ====================== Search Styles  */
+.searchContainer {
+  margin: 1rem;
+  text-align: center;
+}
+
+.searchContainer input {
+  padding: 8px;
+  width: 200px;
+}
+
+.searchButton {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchContainer input {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ======================================================= */
+main {
+  padding: 20px;
+}
+
+/* ============================================ Checkout Styles */
+.buttonContainer {
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.check-out {
+  font-size: 18px;
+}
+
+.checkButton {
+  padding: 10px;
+}
+
+.checkButton,
+.newsButton {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* ========================================= Game Card */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+  position: relative;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.game-details {
+  margin-top: 10px;
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game-category {
+  font-size: 14px;
+  color: #666;
+}
+
+.game-price {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* ============================================ NEWS STYLES */
+.news-wrapper {
+  max-width: 800px;
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 4rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.news-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.news-paragraph {
+  line-height: 1.6;
+  margin: 1rem;
+}
+
+.newsButton {
+  margin: 1rem;
+  padding: 7px;
+}
+
+@media (max-width: 768px) {
+  a.newsButton {
+    margin: 0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  a.newsButton {
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-wrapper {
+    padding: 40px 10px;
+  }
+}
+
+header,
+footer,
+.checkButton,
+.newsButton,
+a.view-button,
+.searchButton,
+buy-button,
+.cart-count,
+prev-button,
+next-button,
+.sell-container,
+#scrollToTopBtn {
+  background-image: url("images/background.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.checkButton:hover,
+.newsButton:hover,
+.searchButton:hover,
+add-to-cart-button:hover,
+buy-button:hover,
+prev-button,
+next-button,
+a.view-button:hover {
+  color: #ffd700 !important;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ================================Scroll Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #ffd700;
+  border: 4px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  margin-bottom: 2rem;
+}
+
+/* =================================== Vew && Buy Buttons */
+
+a.view-button,
+buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1rem;
+  max-width: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .game-card {
+    width: 100%;
+  }
+}
+
+buy-button {
+  float: right;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  buy-button {
+    float: none;
+    display: block;
+  }
+}
+
+/* ====================================== Search MODAL */
+.modal-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =============================================== Pagination */
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+prev-button,
+next-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* ================================================== Sell page */
+.sell-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.sell-section {
+  margin-top: 20px;
+}
+
+.flexwrap-sell {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content,
+.condition {
+  flex: 1 1 calc(50% - 10px);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #222;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sell-checkbox {
+  margin-bottom: 5px;
+}
+
+.price-btn-container {
+  margin-top: 20px;
+  border: 3px solid #fff;
+  max-width: 100px !important;
+}
+
+.price-btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sell-game-container {
+  margin-top: 20px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.please-contact-p {
+  margin-top: 20px;
+}
+
+header,
+footer,
+.logoText,
+.hamburger,
+nav a,
+.searchButton,
+.please-contact,
+.price-btn,
+.sell-container,
+a.view-button,
+.news-wrapper,
+.checkButton,
+.newsButton,
+buy-button,
+footer,
+prev-button,
+next-button {
+  color: #fff;
+}
+
+.please-contact {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+@media (max-width: 600px) {
+  .flexwrap-sell {
+    flex-direction: column;
+  }
+
+  .content,
+  .condition {
+    flex: 1 1 100%;
+    margin-right: 0;
+  }
+}

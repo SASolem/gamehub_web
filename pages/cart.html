@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../cart.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logoText">GAMEHUB</h1>
+      <button class="hamburger" id="hamburgerButton">&#9776;</button>
+      <nav class="navContainer">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li class="cart">
+            <a href="./cart.html" id="cart-icon" onclick="toggleCartPage()">
+              🛒 <span id="cart-count">0</span>
+            </a>
+          </li>  
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="cart-container" id="cartItems"></div>
+
+    <div id="total" class="cart-total"></div>
+
+    <footer class="footerContainer">
+      <span class="footerText">&copy; 2023 Gamehub. All rights reserved.</span>
+      <span class="footerText">Design by NeNorvalls</span>
+    </footer>
+
+    <script type="module" src="../header.js"></script>
+    <script type="module" src="../cart.js"></script>
+  </body>
+</html>

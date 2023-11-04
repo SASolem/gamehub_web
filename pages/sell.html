@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Sell Your Video Games. Easy to start.</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logoText">GAMEHUB</h1>
+      <button class="hamburger" id="hamburgerButton">&#9776;</button>
+      <nav class="navContainer">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li class="cart">
+            <li class="cart">
+              <a href="./cart.html" id="cart-icon" onclick="toggleCartPage()">
+                🛒 <span id="cart-count">0</span>
+              </a>
+            </li>  
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sell-container">
+      <h1>Sell Your Video Games. Easy to start.</h1>
+      <h2>Takes seconds to list, manage, and ship your video game</h2>
+
+      <section class="sell-section">
+        <div>
+          <h2>Sell games, for cash or credits</h2>
+        </div>
+
+        <div class="flexwrap-sell">
+          <div class="content">
+            <h2>Condition</h2>
+            <input class="sell-checkbox" type="checkbox" id="cib" name="cib" />
+            <label for="cib">CIB (complete in box)</label><br />
+            <input
+              class="sell-checkbox"
+              type="checkbox"
+              id="manual"
+              name="manual"
+            />
+            <label for="manual">Manual</label><br />
+            <input
+              class="sell-checkbox"
+              type="checkbox"
+              id="cover"
+              name="cover"
+            />
+            <label for="cover">Cover</label><br />
+            <input
+              class="sell-checkbox"
+              type="checkbox"
+              id="disc"
+              name="disc"
+            />
+            <label for="disc">Disc</label><br />
+            <input
+              class="sell-checkbox"
+              type="checkbox"
+              id="extras"
+              name="extras"
+            />
+            <label for="extras">Extras</label>
+          </div>
+
+          <div class="condition">
+            <input type="radio" id="5" name="condition" value="5" />
+            <label for="5">5 - Perfect condition</label><br />
+            <input type="radio" id="4" name="condition" value="4" />
+            <label for="4">4 - Good condition</label><br />
+            <input type="radio" id="3" name="condition" value="3" />
+            <label for="3">3 - Normal condition</label><br />
+            <input type="radio" id="2" name="condition" value="2" />
+            <label for="2">2 - Weak condition</label><br />
+            <input type="radio" id="1" name="condition" value="1" />
+            <label for="1">1 - Bad, but working</label>
+          </div>
+        </div>
+
+        <div class="price-btn-container">
+          <a class="price-btn" href="./product.html">Check Price</a>
+        </div>
+
+        <h2>How to sell a game:</h2>
+        <div class="sell-game-container">
+          <ol>
+            <li>
+              Search for the game on the search bar, and pick content and
+              condition.
+            </li>
+            <li>
+              Ship or deliver your products to our location, and your credits
+              should be available after arrival.
+            </li>
+            <li>
+              Buyers pay via credit card, debit card, or PayPal. You receive the
+              funds in your PayPal account.
+            </li>
+          </ol>
+        </div>
+
+        <p class="please-contact-p">
+          <a class="please-contact" href="./contact.html"
+            >Please contact us for further information.</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <footer class="footerContainer">
+      <span class="footerText">&copy; 2023 Gamehub. All rights reserved.</span>
+      <span class="footerText">Design by NeNorvalls</span>
+    </footer>
+  </body>
+</html>

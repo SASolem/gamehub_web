@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub</title>
+  <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="logoText">GAMEHUB</h1>
+    <button class="hamburger" id="hamburgerButton">&#9776;</button>
+    <nav class="navContainer">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li class="cart">
+          <a href="./cart.html" id="cart-icon" onclick="toggleCartPage()">
+            🛒 <span id="cart-count">0</span>
+          </a>
+        </li>  
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <ul class="categories">
+      <li>
+        <label for="category">Category:</label>
+        <select id="category"></select>
+      </li>
+    </ul>
+  </div>
+
+  <div id="gameList" class="game-container"></div>
+
+  <div class="page-container">
+    <div id="pagination" class="pagination">
+      <button id="prev-button" onclick="changePage(-1)">Previous</button>
+      <button id="next-button" onclick="changePage(1)">Next</button>
+    </div>
+  </div>
+  
+    <button id="scrollToTopBtn">Top</button>
+  </div>
+</main>
+
+<footer class="footerContainer">
+  <span class="footerText">&copy; 2023 Gamehub. All rights reserved.</span>
+  <span class="footerText">Design by NeNorvalls</span>
+</footer>
+
+<script type="module" src="../products.js"></script>
+<script type="module" src="../header.js"></script>
+<script type="module" src="../data/games.js"></script>
+<script type="module" src="../category.js"></script>
+
+</body>
+</html>
+
